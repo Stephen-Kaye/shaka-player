@@ -496,6 +496,7 @@ describe('DrmEngine', function() {
         individualizationServer: '',
         distinctiveIdentifierRequired: true,
         persistentStateRequired: true,
+        initDataTypes: null,
       };
       drmEngine.configure(config);
 
@@ -550,6 +551,7 @@ describe('DrmEngine', function() {
         individualizationServer: '',
         distinctiveIdentifierRequired: false,
         persistentStateRequired: false,
+        initDataTypes: null,
       };
       drmEngine.configure(config);
 
@@ -1692,6 +1694,7 @@ describe('DrmEngine', function() {
         serverCertificate: null,
         individualizationServer: '',
         persistentStateRequired: true,
+        initDataTypes: null,
       };
       drmEngine.configure(config);
 
@@ -2048,6 +2051,7 @@ describe('DrmEngine', function() {
       serverCertificate: serverCert,
       individualizationServer: '',
       videoRobustness: '',
+      initDataTypes: null,
     };
   }
 

@@ -439,7 +439,8 @@ shaka.extern.DashContentProtectionCallback;
  *   videoRobustness: string,
  *   audioRobustness: string,
  *   serverCertificate: Uint8Array,
- *   individualizationServer: string
+ *   individualizationServer: string,
+ *   initDataTypes: ?Array.<string>
  * }}
  *
  * @property {boolean} distinctiveIdentifierRequired
@@ -469,7 +470,9 @@ shaka.extern.DashContentProtectionCallback;
  * @property {string} individualizationServer
  *   The server that handles an 'individualiation-request'.  If the server isn't
  *   given, it will default to the license server.
- *
+ * @property {?Array.<string>} initDataTypes
+ *   A list of supported initialization data type names. An initialization data
+ *   type is a string indicating the format of the initialization data.
  * @exportDoc
  */
 shaka.extern.AdvancedDrmConfiguration;

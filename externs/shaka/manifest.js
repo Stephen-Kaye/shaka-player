@@ -146,6 +146,7 @@ shaka.extern.InitDataOverride;
  *   videoRobustness: string,
  *   serverCertificate: Uint8Array,
  *   initData: Array.<!shaka.extern.InitDataOverride>,
+ *   initDataTypes: Array.<string>,
  *   keyIds: Array.<string>
  * }}
  *
@@ -184,6 +185,10 @@ shaka.extern.InitDataOverride;
  *   <i>Defaults to [], e.g., no override.</i> <br>
  *   A list of initialization data which override any initialization data found
  *   in the content.  See also shaka.extern.InitDataOverride.
+ * @property {Array.<string>} initDataTypes
+ *   <i>Defaults to [].</i><br>
+ *   A list of supported initialization data type names. An initialization data
+ *   type is a string indicating the format of the initialization data.
  * @property {Array.<string>} keyIds
  *   <i>Defaults to []</i> <br>
  *   If not empty, contains the default key IDs for this key system, as

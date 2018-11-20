@@ -206,6 +206,8 @@ shakaDemo.preparePlayer_ = function(asset) {
 
   let commonDrmSystems = [
     'com.widevine.alpha',
+    'com.microsoft.playready.recommendation',
+    'com.microsoft.playready',
     'com.microsoft.playready',
     'com.adobe.primetime',
     'org.w3.clearkey',
@@ -216,7 +218,8 @@ shakaDemo.preparePlayer_ = function(asset) {
     advanced: {}});
   commonDrmSystems.forEach(function(system) {
     config.drm.advanced[system] =
-        /** @type {shaka.extern.AdvancedDrmConfiguration} */({});
+        /** @type {shaka.extern.AdvancedDrmConfiguration} */
+        ({initDataTypes: ['cenc']});
   });
   config.manifest.dash.clockSyncUri =
       'https://shaka-player-demo.appspot.com/time.txt';

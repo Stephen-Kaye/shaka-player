@@ -1337,6 +1337,7 @@ describe('Storage', function() {
       persistentStateRequired: true,
       distinctiveIdentifierRequired: false,
       initData: null,
+      initDataTypes: null,
       keyIds: null,
       serverCertificate: null,
       audioRobustness: 'HARDY',
